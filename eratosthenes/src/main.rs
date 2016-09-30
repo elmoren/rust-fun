@@ -1,19 +1,19 @@
-# My first Rust program :D
+// Seive of Eratosthenes
+// Simple prime number generation algorithm
+
+// ... My first Rust program
 
 use std::env;
-use std::iter::range_inclusive;
-use std::ops::Rem;
 
 fn main() {
     let args: Vec<_> = env::args().collect();
-   
-    let mut input;
+
     if args.len() < 2 {
         println!("usage:: Finds all primes up to n: missing arg <n>");
 	return;
     }
     
-    input = args[1].parse::<i32>();
+    let input = args[1].parse::<i32>();
     
     let n = match input {
 	Ok(n) => {n},
@@ -23,9 +23,9 @@ fn main() {
 	}
     };
     
-    println!("Finding all primes up to{:?}", n);
+    println!("Finding all primes up to {:?}", n);
     
-    let mut primes: Vec<i32> = range_inclusive(0, n).collect();
+    let mut primes: Vec<i32> = (0..n).collect();
 
     sieve (&mut primes);
 
