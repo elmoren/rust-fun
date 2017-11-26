@@ -1,0 +1,6 @@
+[package]
+name = "pulse_compression"
+version = "0.1.0"
+authors = ["nate"]
+
+[dependencies]
