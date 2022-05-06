@@ -1,11 +1,3 @@
-//
-// Simple Pulse Compression Demo
-//
-// I wanted to do a rust project that would help me learn
-// rust more and work with signals bit. So this is what I 
-// came up with, maybe I'll add doppler at some point. 
-//
-
 mod waveform;
 
 use waveform::*;
