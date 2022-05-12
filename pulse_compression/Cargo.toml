@@ -1,6 +1,8 @@
 [package]
 name = "pulse_compression"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["nate"]
+edition = "2021"
 
 [dependencies]
+plotters = "^0.3.1"
